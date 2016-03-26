@@ -1,6 +1,11 @@
 # k8s-setup
 
-k8s setup
+## todo
+
+* separate sg of front and back
+* elb integration 
+
+k8s setup on aws
 
 1. aws IAM role
 1. source env.sh
@@ -43,4 +48,5 @@ k8s setup
     ]
 }
 ```
+
 
