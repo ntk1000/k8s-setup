@@ -5,7 +5,7 @@ export KUBERNETES_PROVIDER=aws
 
 # 使用するAZの名前。デフォルトは us-west-2a になっているため、必要に応じて変更。
 # なお、使用するリージョンは、このAZ名から判断される。
-export KUBE_AWS_ZONE=ap-northeast-1a
+export KUBE_AWS_ZONE=us-east-1a
 
 # Master と Minon のインスタンスサイズ。デフォルトで t2.micro にはなっているが
 # 念のため設定。

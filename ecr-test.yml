@@ -7,3 +7,6 @@ spec:
                 - name: ecr
                   image: 406545189473.dkr.ecr.us-east-1.amazonaws.com/auth:latest
                   imagePullPolicy: Always
+                  env:
+                        - name: GOAPIPORT
+                          value: "8080"
