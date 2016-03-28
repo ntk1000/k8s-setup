@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+        name: ecr-test
+spec:
+        containers:
+                - name: ecr
+                  image: 406545189473.dkr.ecr.us-east-1.amazonaws.com/auth:latest
+                  imagePullPolicy: Always
