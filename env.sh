@@ -9,15 +9,19 @@ export KUBE_AWS_ZONE=ap-northeast-1a
 
 # Master と Minon のインスタンスサイズ。デフォルトで t2.micro にはなっているが
 # 念のため設定。
+# MASTERはt2.micro非推奨
 export MASTER_SIZE=t2.micro
 export MINION_SIZE=t2.micro
 
 # Minion の台数(作成するインスタンス数)。デフォルトで4台なので、2台にしておいた。
 export NUM_MINIONS=2
+export NUM_NODES=2
 
 # S3 のバケット名。すでに存在しればそれが使われ、存在しなければ作成される。
 # なお、この環境変数を指定しなくても、名前を自動生成してバットを作成してくれる。
-export AWS_S3_BUCKET=k8s
+export AWS_S3_BUCKET=hmx-k8s
 
 # S3 のリージョン。バケットをスクリプトに生成させる場合に指定する。
 export AWS_S3_REGION=ap-northeast-1
+
+export INSTANCE_PREFIX=k8s
