@@ -2,8 +2,11 @@
 
 ## todo
 
-* separate sg of front and back
-* elb integration 
+* separate sg of front and back -> elb sg 
+* elb integration -> service type:LoadBalancer 
+* 下記理由によりawsでのk8sを諦める
+	* ecr regionまたぐと使えない(ec2 on asia -> ecr on us つながらない)
+	* auto scaleしない
 
 k8s setup on aws
 
